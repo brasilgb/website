@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+      @apply font-roboto antialiased;
+  }
+
+  p,
+  span,
+  label,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      @apply font-roboto;
+  }
+}
+
+@layer components {
+  .btn-save {
+      @apply inline-flex items-center gap-2 rounded-md border border-blue-700 shadow-md bg-blue-600 px-5 py-1 font-roboto font-medium text-white transition-colors hover:bg-blue-700;
+  }
+  .btn-login {
+    @apply inline-flex items-center rounded-md border-2 shadow-md bg-blue-dark hover:bg-blue-middle border-white px-5 py-2 font-roboto font-medium text-base text-gray-light transition-colors;
+  }
+  .error-message {
+    @apply bg-yellow-100 text-sm p-2 text-red-500 rounded border border-red-200
+  }
+}
